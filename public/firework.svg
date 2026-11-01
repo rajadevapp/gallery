@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <defs>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(400 390) rotate(90) scale(58)">
+      <stop stop-color="#FFF9D6"/>
+      <stop offset=".38" stop-color="#FFD76A"/>
+      <stop offset="1" stop-color="#FF9D24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="400" y1="390" x2="400" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6B7"/>
+      <stop offset=".48" stop-color="#FFC84A"/>
+      <stop offset="1" stop-color="#FF8A22" stop-opacity=".12"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main radiant trails -->
+  <g stroke="url(#gold)" stroke-linecap="round" filter="url(#glow)">
+    <path stroke-width="7" d="M400 390 C397 300 405 198 400 92"/>
+    <path stroke-width="6" d="M400 390 C450 300 493 208 548 132"/>
+    <path stroke-width="7" d="M400 390 C495 337 582 286 672 252"/>
+    <path stroke-width="6" d="M400 390 C505 385 612 389 716 402"/>
+    <path stroke-width="7" d="M400 390 C485 444 570 510 637 584"/>
+    <path stroke-width="6" d="M400 390 C438 489 465 590 477 690"/>
+    <path stroke-width="7" d="M400 390 C350 480 306 570 250 662"/>
+    <path stroke-width="6" d="M400 390 C304 435 213 483 122 534"/>
+    <path stroke-width="7" d="M400 390 C294 383 190 365 86 336"/>
+    <path stroke-width="6" d="M400 390 C320 320 244 245 177 164"/>
+    <path stroke-width="5" d="M400 390 C375 285 350 190 326 105"/>
+    <path stroke-width="5" d="M400 390 C470 280 530 190 590 88"/>
+  </g>
+
+  <!-- Fine secondary streaks -->
+  <g stroke="#FFD66B" stroke-linecap="round" opacity=".9">
+    <path stroke-width="3" d="M400 390 L365 58"/>
+    <path stroke-width="3" d="M400 390 L620 170"/>
+    <path stroke-width="3" d="M400 390 L745 300"/>
+    <path stroke-width="3" d="M400 390 L740 490"/>
+    <path stroke-width="3" d="M400 390 L560 730"/>
+    <path stroke-width="3" d="M400 390 L330 745"/>
+    <path stroke-width="3" d="M400 390 L155 620"/>
+    <path stroke-width="3" d="M400 390 L55 445"/>
+    <path stroke-width="3" d="M400 390 L95 235"/>
+    <path stroke-width="3" d="M400 390 L250 75"/>
+  </g>
+
+  <!-- Spark points -->
+  <g fill="#FFF2B0" filter="url(#glow)">
+    <circle cx="400" cy="92" r="7"/><circle cx="548" cy="132" r="6"/>
+    <circle cx="672" cy="252" r="7"/><circle cx="716" cy="402" r="6"/>
+    <circle cx="637" cy="584" r="7"/><circle cx="477" cy="690" r="6"/>
+    <circle cx="250" cy="662" r="7"/><circle cx="122" cy="534" r="6"/>
+    <circle cx="86" cy="336" r="7"/><circle cx="177" cy="164" r="6"/>
+    <circle cx="326" cy="105" r="5"/><circle cx="590" cy="88" r="5"/>
+  </g>
+  <g fill="#FFB52E">
+    <circle cx="365" cy="58" r="4"/><circle cx="620" cy="170" r="4"/>
+    <circle cx="745" cy="300" r="4"/><circle cx="740" cy="490" r="4"/>
+    <circle cx="560" cy="730" r="4"/><circle cx="330" cy="745" r="4"/>
+    <circle cx="155" cy="620" r="4"/><circle cx="55" cy="445" r="4"/>
+    <circle cx="95" cy="235" r="4"/><circle cx="250" cy="75" r="4"/>
+  </g>
+
+  <!-- Central glow -->
+  <circle cx="400" cy="390" r="58" fill="url(#core)"/>
+  <circle cx="400" cy="390" r="10" fill="#FFFBE8"/>
+  <circle cx="400" cy="390" r="22" stroke="#FFE28A" stroke-width="2" opacity=".8"/>
+</svg>
